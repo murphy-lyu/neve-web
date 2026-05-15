@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 — Carry</title>
+    <style>
+        :root {
+            --fg: #1a1a1a;
+            --fg-secondary: #555;
+            --fg-tertiary: #888;
+            --bg: #ffffff;
+            --separator: #e5e5e5;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fg: #f0f0f0;
+                --fg-secondary: #b0b0b0;
+                --fg-tertiary: #888;
+                --bg: #1a1a1a;
+                --separator: #333;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+            color: var(--fg);
+            background: var(--bg);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 680px; margin: 0 auto; padding: 64px 24px 96px; }
+        .lang-switch { text-align: right; font-size: 13px; color: var(--fg-tertiary); margin-bottom: 32px; }
+        .lang-switch a { color: var(--fg-secondary); text-decoration: none; border-bottom: 1px solid var(--separator); }
+        .lang-switch a:hover { color: var(--fg); }
+        h1 { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; }
+        .meta { font-size: 13px; color: var(--fg-tertiary); margin: 0 0 48px; }
+        h2 { font-size: 18px; font-weight: 600; margin: 40px 0 12px; }
+        p { margin: 0 0 16px; font-size: 15px; color: var(--fg); }
+        ul { margin: 0 0 16px; padding-left: 20px; }
+        li { font-size: 15px; margin-bottom: 6px; color: var(--fg); }
+        a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--separator); text-underline-offset: 3px; }
+        a:hover { text-decoration-color: var(--fg); }
+        .footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--separator); font-size: 13px; color: var(--fg-tertiary); }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="./">English</a>
+        </div>
+
+        <h1>Carry 隐私政策</h1>
+        <p class="meta">最后更新日期:2026 年 5 月 15 日 · 生效日期:2026 年 5 月 15 日</p>
+
+        <h2>1. 关于本政策</h2>
+        <p>本隐私政策("本政策")说明 Carry("本应用"或"我们")在你使用本应用过程中如何对待你的个人信息。本应用由 <strong>Luma Studio</strong>(以下简称"我们")开发并发布。</p>
+        <p>如果你对本政策有任何疑问、意见或希望行使本政策项下的权利,请通过 <a href="mailto:murphy.lyu@icloud.com">murphy.lyu@icloud.com</a> 与我们联系。</p>
+        <p>使用本应用即表示你已阅读、理解并同意本政策的内容。如果你不同意,请停止使用本应用并将其卸载。</p>
+
+        <h2>2. 我们的核心承诺</h2>
+        <p>我们设计 Carry 时遵循"数据最小化"原则。<strong>我们不收集、不存储、不传输、不出售你的任何个人信息至我们的服务器或任何第三方</strong>。</p>
+        <p>具体而言:</p>
+        <ul>
+            <li>我们不运营任何后端服务器</li>
+            <li>我们不使用第三方分析、追踪、广告或崩溃报告框架</li>
+            <li>我们不要求你注册账号</li>
+            <li>我们不知道你是谁、你去过哪里、你打包了什么</li>
+        </ul>
+
+        <h2>3. 你在 Carry 中产生的数据</h2>
+        <p>为了让本应用正常工作,你在使用过程中会产生以下数据:</p>
+        <ul>
+            <li><strong>行程信息</strong>:行程名称、目的地城市、出发与返回日期</li>
+            <li><strong>物品清单</strong>:你的打包物品名称、勾选状态、所属分类、自定义排序</li>
+            <li><strong>场景选择</strong>:你为该次行程选择的场景标签</li>
+        </ul>
+        <p><strong>这些数据完全保存在你的设备本机</strong>,由 iOS 系统级数据库(SwiftData)管理,受 iOS 沙盒机制保护。除非你主动开启 iCloud 同步(见第 4 条),任何人——包括我们——都无法访问这些数据。</p>
+        <p>当你卸载本应用时,这些数据会随之被 iOS 系统删除。</p>
+
+        <h2>4. iCloud 同步(如启用)</h2>
+        <p>未来版本中,本应用可能提供 iCloud 同步功能。当你启用此功能:</p>
+        <ul>
+            <li>你的行程数据会通过 Apple 提供的 <strong>CloudKit 私有数据库</strong>同步到你的其他 Apple 设备</li>
+            <li>数据存储在 <strong>你自己的 iCloud 账户内</strong>,使用你自己的存储配额</li>
+            <li><strong>我们没有访问、读取或修改这些数据的能力</strong></li>
+            <li>此过程受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 约束,与我们无关</li>
+        </ul>
+        <p>如未启用 iCloud 同步,本条款不适用。</p>
+
+        <h2>5. 本地通知</h2>
+        <p>本应用使用 iOS 本地通知功能,在你出行前提醒你整理打包。所有通知调度和触发<strong>完全在你的设备上完成</strong>,通知内容不会经过任何服务器。</p>
+        <p>如不需要此功能,可随时通过 iOS 系统设置关闭通知权限。</p>
+
+        <h2>6. 我们不收集的信息(明确声明)</h2>
+        <p>为消除疑虑,我们明确声明本应用<strong>不</strong>收集以下任何信息:</p>
+        <ul>
+            <li>个人身份信息(姓名、邮箱、电话、地址等)</li>
+            <li>设备识别符(IDFA、IDFV、UUID 等)</li>
+            <li>位置信息(GPS、IP 地址、网络信息等)</li>
+            <li>使用行为数据(点击、停留时长、访问页面等)</li>
+            <li>技术诊断数据(崩溃日志、性能数据等)</li>
+            <li>联系人、相册、麦克风、相机等任何设备权限内容</li>
+        </ul>
+
+        <h2>7. 第三方服务</h2>
+        <p>本应用<strong>不集成任何第三方分析、广告、追踪、推送或崩溃报告 SDK</strong>。</p>
+        <p>唯一涉及的第三方关系是:</p>
+        <ul>
+            <li><strong>Apple App Store</strong>:作为本应用的分发渠道,受 Apple 自身的隐私政策约束</li>
+            <li><strong>Apple iCloud</strong>(仅当你启用同步时):见第 4 条</li>
+        </ul>
+
+        <h2>8. 儿童隐私</h2>
+        <p>本应用并非专为 13 岁以下儿童设计。由于本应用不收集任何个人信息,本应用不会有意收集任何用户(包括儿童)的个人信息。</p>
+        <p>如果你是儿童的监护人,并希望了解或要求采取相关行动,请通过本政策第 1 条所列邮箱与我们联系。</p>
+
+        <h2>9. 你的权利</h2>
+        <p>由于我们<strong>不收集、不持有</strong>任何你的个人信息,部分常见的数据主体权利(如访问、更正、可携带等)在我们这里并无可执行的对象。但你仍享有以下控制能力:</p>
+        <ul>
+            <li><strong>访问与导出</strong>:你的所有数据保存在你设备本机,可通过 iOS 自带的"备份与恢复"机制进行导出和迁移</li>
+            <li><strong>删除</strong>:随时通过 iOS 删除本应用,所有本地数据会被 iOS 系统一并删除;如启用 iCloud 同步,可在 iOS"设置 → Apple ID → iCloud → 管理账户存储 → Carry"中删除云端副本</li>
+            <li><strong>关闭通知</strong>:随时通过 iOS"设置 → Carry"关闭</li>
+        </ul>
+        <p>如果你位于欧盟、英国、加州或其他赋予数据主体特别权利的司法辖区,本政策上述安排已超过当地法律要求的最低保护水平。</p>
+
+        <h2>10. 数据保留</h2>
+        <p>由于我们不收集你的数据,<strong>不存在数据保留期限</strong>这个概念。你设备上的数据保留时长由你自己决定。</p>
+
+        <h2>11. 数据安全</h2>
+        <p>由于数据保存在你的设备和(如启用)你的 iCloud 账户中,数据安全主要依赖于:</p>
+        <ul>
+            <li>你设备的锁屏密码、Face ID/Touch ID</li>
+            <li>你的 Apple ID 安全(包括两步验证)</li>
+            <li>iOS 系统级的沙盒和加密机制</li>
+        </ul>
+        <p>我们建议你为设备和 Apple ID 启用强密码及两步验证。</p>
+
+        <h2>12. 跨境数据传输</h2>
+        <p>由于我们不收集任何数据,<strong>不存在跨境数据传输</strong>。</p>
+        <p>如启用 iCloud 同步,跨境传输完全由 Apple 处理,受 Apple 隐私政策约束。</p>
+
+        <h2>13. 政策变更</h2>
+        <p>如果我们对本政策做出重大变更,会在本应用更新时通过版本说明告知你,并更新本页顶部的"最后更新日期"。</p>
+        <p>由于我们没有用户账户系统,无法主动通过邮件或推送向你单独通知。请在重大版本更新时留意阅读本政策。</p>
+        <p>继续使用本应用即视为你接受变更后的政策。如果你不接受变更,请停止使用本应用。</p>
+
+        <h2>14. 联系我们</h2>
+        <p>如对本政策有任何疑问、意见或希望行使任何权利:</p>
+        <p><strong>邮箱</strong>:<a href="mailto:murphy.lyu@icloud.com">murphy.lyu@icloud.com</a><br>
+        <strong>运营方</strong>:Luma Studio</p>
+        <p>我们会在合理时间内(通常 7 个工作日内)回复。</p>
+
+        <div class="footer">
+            <p>Carry 由 Luma Studio 制作。<a href="../">查看所有法律文件</a> · <a href="../terms/zh.html">服务条款</a></p>
+        </div>
+    </div>
+</body>
+</html>

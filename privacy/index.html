@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Carry</title>
+    <style>
+        :root {
+            --fg: #1a1a1a;
+            --fg-secondary: #555;
+            --fg-tertiary: #888;
+            --bg: #ffffff;
+            --separator: #e5e5e5;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fg: #f0f0f0;
+                --fg-secondary: #b0b0b0;
+                --fg-tertiary: #888;
+                --bg: #1a1a1a;
+                --separator: #333;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+            color: var(--fg);
+            background: var(--bg);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+        }
+        .lang-switch {
+            text-align: right;
+            font-size: 13px;
+            color: var(--fg-tertiary);
+            margin-bottom: 32px;
+        }
+        .lang-switch a {
+            color: var(--fg-secondary);
+            text-decoration: none;
+            border-bottom: 1px solid var(--separator);
+        }
+        .lang-switch a:hover { color: var(--fg); }
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 0 0 8px;
+        }
+        .meta {
+            font-size: 13px;
+            color: var(--fg-tertiary);
+            margin: 0 0 48px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+            letter-spacing: -0.01em;
+        }
+        p {
+            margin: 0 0 16px;
+            font-size: 15px;
+            color: var(--fg);
+        }
+        ul {
+            margin: 0 0 16px;
+            padding-left: 20px;
+        }
+        li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: var(--fg);
+        }
+        a {
+            color: var(--fg);
+            text-decoration: underline;
+            text-decoration-color: var(--separator);
+            text-underline-offset: 3px;
+        }
+        a:hover { text-decoration-color: var(--fg); }
+        .footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--separator);
+            font-size: 13px;
+            color: var(--fg-tertiary);
+        }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="zh.html">简体中文</a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated May 15, 2026 · Effective May 15, 2026</p>
+
+        <h2>1. About this policy</h2>
+        <p>This Privacy Policy ("Policy") explains how Carry (the "App", "we", or "our") handles your information when you use the App. The App is developed and published by <strong>Luma Studio</strong>.</p>
+        <p>If you have questions, comments, or wish to exercise any rights described below, please contact us at <a href="mailto:murphy.lyu@icloud.com">murphy.lyu@icloud.com</a>.</p>
+        <p>By using the App, you acknowledge that you have read, understood, and agreed to this Policy. If you do not agree, please stop using the App and uninstall it.</p>
+
+        <h2>2. Our core commitment</h2>
+        <p>We designed Carry around the principle of data minimization. <strong>We do not collect, store, transmit, or sell any of your personal information to our servers or any third party.</strong></p>
+        <p>Specifically:</p>
+        <ul>
+            <li>We operate no backend servers</li>
+            <li>We use no third-party analytics, tracking, advertising, or crash-reporting frameworks</li>
+            <li>We do not require you to create an account</li>
+            <li>We do not know who you are, where you've been, or what you've packed</li>
+        </ul>
+
+        <h2>3. Data you create within Carry</h2>
+        <p>To make the App functional, the following data is generated as you use it:</p>
+        <ul>
+            <li><strong>Trip information</strong>: trip name, destination city, departure and return dates</li>
+            <li><strong>Packing items</strong>: item names, packed status, category assignments, custom ordering</li>
+            <li><strong>Scene selections</strong>: the scene tags you chose for a given trip</li>
+        </ul>
+        <p><strong>This data is stored entirely on your device</strong>, managed by iOS's system-level database (SwiftData) and protected by iOS's app sandbox. Unless you opt into iCloud sync (see Section 4), no one — including us — can access this data.</p>
+        <p>When you uninstall the App, this data is removed by iOS along with it.</p>
+
+        <h2>4. iCloud sync (when enabled)</h2>
+        <p>In future versions, the App may offer iCloud sync. When enabled:</p>
+        <ul>
+            <li>Your trip data syncs across your other Apple devices via Apple's <strong>CloudKit private database</strong></li>
+            <li>The data is stored <strong>inside your own iCloud account</strong>, using your own storage allotment</li>
+            <li><strong>We have no ability to access, read, or modify this data</strong></li>
+            <li>This process is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, not ours</li>
+        </ul>
+        <p>If you do not enable iCloud sync, this section does not apply.</p>
+
+        <h2>5. Local notifications</h2>
+        <p>The App uses iOS local notifications to remind you to start packing before a trip. All scheduling and delivery happen <strong>entirely on your device</strong> — no notification content passes through any server.</p>
+        <p>You can disable notifications at any time via iOS Settings.</p>
+
+        <h2>6. What we explicitly do not collect</h2>
+        <p>For the avoidance of doubt, the App <strong>does not</strong> collect any of the following:</p>
+        <ul>
+            <li>Personally identifiable information (name, email, phone, address, etc.)</li>
+            <li>Device identifiers (IDFA, IDFV, UUID, etc.)</li>
+            <li>Location information (GPS, IP address, network info, etc.)</li>
+            <li>Behavioral data (taps, dwell time, screens viewed, etc.)</li>
+            <li>Technical diagnostics (crash logs, performance data, etc.)</li>
+            <li>Contents of contacts, photos, microphone, camera, or any other device permission</li>
+        </ul>
+
+        <h2>7. Third-party services</h2>
+        <p>The App <strong>does not integrate any third-party analytics, advertising, tracking, push, or crash-reporting SDKs</strong>.</p>
+        <p>The only third-party relationships involved are:</p>
+        <ul>
+            <li><strong>Apple App Store</strong>: distributes the App, governed by Apple's own privacy policy</li>
+            <li><strong>Apple iCloud</strong> (only if you enable sync): see Section 4</li>
+        </ul>
+
+        <h2>8. Children's privacy</h2>
+        <p>The App is not designed for children under 13. Because the App does not collect any personal information, we do not knowingly collect personal information from any user, including children.</p>
+        <p>If you are a guardian and have questions or wish to exercise any rights on behalf of a child, please contact us using the email in Section 1.</p>
+
+        <h2>9. Your rights</h2>
+        <p>Because we <strong>do not collect or hold</strong> any of your personal information, common data subject rights (such as access, rectification, or portability) have no executable target on our side. You retain the following control through your device:</p>
+        <ul>
+            <li><strong>Access and export</strong>: All your data resides on your device and can be backed up or migrated using iOS's built-in backup and restore mechanisms</li>
+            <li><strong>Delete</strong>: Uninstall the App to delete all local data via iOS. If iCloud sync is enabled, you can also remove the cloud copy in iOS → Settings → Apple ID → iCloud → Manage Account Storage → Carry</li>
+            <li><strong>Disable notifications</strong>: At any time via iOS → Settings → Carry</li>
+        </ul>
+        <p>If you reside in the EU, UK, California, or another jurisdiction granting specific data-subject rights, the protections described above already exceed the minimum standards required by applicable law.</p>
+
+        <h2>10. Data retention</h2>
+        <p>Because we do not collect your data, <strong>the concept of a retention period does not apply on our side</strong>. The retention of data on your device is entirely under your control.</p>
+
+        <h2>11. Data security</h2>
+        <p>Because data lives on your device and (if enabled) in your iCloud account, security depends on:</p>
+        <ul>
+            <li>Your device passcode and Face ID/Touch ID</li>
+            <li>Your Apple ID security (including two-factor authentication)</li>
+            <li>iOS's system-level sandboxing and encryption</li>
+        </ul>
+        <p>We recommend you enable strong passcodes and two-factor authentication on your device and Apple ID.</p>
+
+        <h2>12. Cross-border data transfer</h2>
+        <p>Because we collect no data, <strong>no cross-border data transfer takes place</strong> on our side.</p>
+        <p>If iCloud sync is enabled, any cross-border transfer is handled entirely by Apple under Apple's Privacy Policy.</p>
+
+        <h2>13. Changes to this policy</h2>
+        <p>If we make material changes to this Policy, we will notify you through release notes when the App is updated, and update the "Last updated" date at the top of this page.</p>
+        <p>Because we have no user account system, we cannot notify you individually by email or push. Please review this Policy when significant version updates are released.</p>
+        <p>Continued use of the App after changes constitutes acceptance of the updated Policy. If you do not accept the changes, please stop using the App.</p>
+
+        <h2>14. Contact us</h2>
+        <p>For any questions, comments, or to exercise any rights:</p>
+        <p><strong>Email</strong>: <a href="mailto:murphy.lyu@icloud.com">murphy.lyu@icloud.com</a><br>
+        <strong>Operator</strong>: Luma Studio</p>
+        <p>We aim to respond within a reasonable time (typically within 7 business days).</p>
+
+        <div class="footer">
+            <p>Carry is made by Luma Studio. <a href="../">All legal documents</a> · <a href="../terms/">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>
