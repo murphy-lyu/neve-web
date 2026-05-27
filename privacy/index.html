@@ -103,7 +103,7 @@
         </div>
 
         <h1>Privacy Policy</h1>
-        <p class="meta">Last updated May 15, 2026 · Effective May 15, 2026</p>
+        <p class="meta">Last updated May 27, 2026 · Effective May 15, 2026</p>
 
         <h2>1. About this policy</h2>
         <p>This Privacy Policy ("Policy") explains how Carry (the "App", "we", or "our") handles your information when you use the App. The App is developed and published by <strong>Luma Studio</strong>.</p>
@@ -129,6 +129,7 @@
         </ul>
         <p><strong>This data is stored entirely on your device</strong>, managed by iOS's system-level database (SwiftData) and protected by iOS's app sandbox. Unless you opt into iCloud sync (see Section 4), no one — including us — can access this data.</p>
         <p>When you uninstall the App, this data is removed by iOS along with it.</p>
+        <p>The App also maintains an automatic local backup file in the app's private sandbox storage directory, used solely for data recovery within the App. This file is not accessible to us or any third party.</p>
 
         <h2>4. iCloud sync (when enabled)</h2>
         <p>In future versions, the App may offer iCloud sync. When enabled:</p>
@@ -140,16 +141,17 @@
         </ul>
         <p>If you do not enable iCloud sync, this section does not apply.</p>
 
-        <h2>5. Local notifications</h2>
+        <h2>5. Local notifications and location access</h2>
         <p>The App uses iOS local notifications to remind you to start packing before a trip. All scheduling and delivery happen <strong>entirely on your device</strong> — no notification content passes through any server.</p>
         <p>You can disable notifications at any time via iOS Settings.</p>
+        <p>When you tap the location button on the map, the App requests access to your device's location ("When In Use") to display your current position via Apple's MapKit framework. This location data is processed on-device and is <strong>never transmitted to us or any third party</strong>. You can revoke this permission at any time via iOS Settings → Carry.</p>
+        <p>When you enter a destination city name, it is sent to Apple's geocoding service (CLGeocoder) to resolve its geographic coordinates. This request is processed entirely by Apple and the result is not accessible to us.</p>
 
         <h2>6. What we explicitly do not collect</h2>
         <p>For the avoidance of doubt, the App <strong>does not</strong> collect any of the following:</p>
         <ul>
             <li>Personally identifiable information (name, email, phone, address, etc.)</li>
             <li>Device identifiers (IDFA, IDFV, UUID, etc.)</li>
-            <li>Location information (GPS, IP address, network info, etc.)</li>
             <li>Behavioral data (taps, dwell time, screens viewed, etc.)</li>
             <li>Technical diagnostics (crash logs, performance data, etc.)</li>
             <li>Contents of contacts, photos, microphone, camera, or any other device permission</li>
@@ -161,6 +163,7 @@
         <ul>
             <li><strong>Apple App Store</strong>: distributes the App, governed by Apple's own privacy policy</li>
             <li><strong>Apple iCloud</strong> (only if you enable sync): see Section 4</li>
+            <li><strong>Apple MapKit / CLGeocoder</strong>: provides map display and converts destination city names to geographic coordinates; governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a></li>
         </ul>
 
         <h2>8. Children's privacy</h2>
