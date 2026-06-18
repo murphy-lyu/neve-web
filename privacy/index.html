@@ -103,7 +103,7 @@
         </div>
 
         <h1>Privacy Policy</h1>
-        <p class="meta">Last updated June 1, 2026 · Effective May 15, 2026</p>
+        <p class="meta">Last updated June 18, 2026 · Effective May 15, 2026</p>
 
         <h2>1. About this policy</h2>
         <p>This Privacy Policy ("Policy") explains how Carry (the "App", "we", or "our") handles your information when you use the App. The App is developed and published by <strong>TIAN LYU</strong>.</p>
@@ -141,13 +141,14 @@
         </ul>
         <p>If you do not enable iCloud sync, this section does not apply.</p>
 
-        <h2>5. Local notifications, location, and Health access</h2>
+        <h2>5. Local notifications, location, photos, and Health access</h2>
         <p>The App uses iOS local notifications to remind you to start packing before a trip. All scheduling and delivery happen <strong>entirely on your device</strong> — no notification content passes through any server.</p>
         <p>You can disable notifications at any time via iOS Settings.</p>
         <p>When you tap the location button on the map, the App requests access to your device's location ("When In Use") to display your current position via Apple's MapKit framework. This location data is processed on-device and is <strong>never transmitted to us or any third party</strong>. You can revoke this permission at any time via iOS Settings → Carry.</p>
         <p>When you enter a destination city name, it is sent to Apple's geocoding service (CLGeocoder) to resolve its geographic coordinates. This request is processed entirely by Apple and the result is not accessible to us.</p>
         <p>When you view the weather forecast for a trip destination, the App sends that destination's geographic coordinates to Apple's WeatherKit service to retrieve weather data. These coordinates are used <strong>solely to fetch the forecast</strong>, are not linked to your identity, and the App does not store or upload your location history. This request is processed by Apple.</p>
         <p>If you choose to enable the period-aware packing reminder, the App requests <strong>read-only</strong> access to your Cycle Tracking data in Apple Health (HealthKit). This data is used <strong>solely on your device</strong> to predict whether an upcoming trip may overlap your period, so the App can suggest packing the relevant items. Your health data is <strong>never stored by the App, never written back to Health, never included in any backup or iCloud sync, and never transmitted to us or any third party</strong>. This feature is entirely optional and <strong>off by default</strong> — you turn it on yourself under the App's Settings → Period Reminders, and you can turn it off there at any time. If you decline access, the period scene remains available to select manually. You can also revoke Health access at any time via iOS Settings → Privacy &amp; Security → Health → Carry.</p>
+        <p>When you use the "Rebuild trip from photos" feature, the App reads — only within the photos you <strong>actively select</strong> through the iOS system photo picker — those photos' <strong>capture time and geographic location (EXIF metadata)</strong>, in order to generate an itinerary locally on your device. The App <strong>does not request access to your entire photo library, never uploads or stores your original photos, and never uses the above information for any other purpose or transmits it to us or any third party</strong>; it only saves a low-resolution thumbnail on your device for the generated itinerary. You can remove these thumbnails at any time by deleting the corresponding trip or place.</p>
 
         <h2>6. What we explicitly do not collect</h2>
         <p>For the avoidance of doubt, the App <strong>does not</strong> collect any of the following:</p>
@@ -156,7 +157,7 @@
             <li>Device identifiers (IDFA, IDFV, UUID, etc.)</li>
             <li>Behavioral data (taps, dwell time, screens viewed, etc.)</li>
             <li>Technical diagnostics (crash logs, performance data, etc.)</li>
-            <li>Contents of contacts, photos, microphone, or camera</li>
+            <li>Contents of contacts, microphone, or camera; and your original photos — for photos you actively select in "Rebuild trip from photos," only their capture time and location are read on-device (see Section 5); your original photos are never uploaded, stored, or transmitted</li>
             <li>Any health data beyond the strictly on-device, read-only Cycle Tracking use described in Section 5 — your Health data is never collected, stored, or transmitted</li>
         </ul>
 
