@@ -1,49 +1,54 @@
-# neve-legal
+# neve-web
 
-Public legal documents for **Neve** apps, served as a static site via Cloudflare Pages at
-**https://legal.nevestudio.app**.
+All of **Neve**'s static web, one repo organized **by site**. Each top-level folder is an
+independent site with its own Cloudflare Pages project (its own custom domain + Root directory),
+so domains, deploys, and lifecycles stay cleanly separated while living in one place.
 
-One repo = one concern (legal site) = one subdomain. Marketing / landing pages live elsewhere
-(`nevestudio.app`), Cloudflare Workers handle app APIs (`flight.` / `config.` / `places.`).
+| Folder | Site | Domain | Cloudflare Pages (Root directory) | Build |
+|---|---|---|---|---|
+| `legal/` | Legal documents | `legal.nevestudio.app` | project root = `legal/` | none (static) |
+| `site/`  | Studio landing (placeholder) | `nevestudio.app` *(not wired yet)* | project root = `site/` | TBD |
+
+Adding a site later → new top-level folder + new Pages project pointing its Root directory there.
+A folder can graduate to its own repo if it ever grows a heavy toolchain — cheap to split.
 
 ## Live URLs
 
-- **Hub**: https://legal.nevestudio.app/
+- **Legal hub**: https://legal.nevestudio.app/
 - **Carry**
   - Privacy: https://legal.nevestudio.app/carry/privacy/ ([中文](https://legal.nevestudio.app/carry/privacy/zh))
   - Terms: https://legal.nevestudio.app/carry/terms/ ([中文](https://legal.nevestudio.app/carry/terms/zh))
+
+> URLs have no `legal/` prefix because the legal Pages project's **Root directory is `legal/`** —
+> `legal/carry/privacy/` is served at `legal.nevestudio.app/carry/privacy/`.
 
 ## Structure
 
 ```
 .
-├── index.html              # Neve legal hub — lists each app
-└── carry/
-    ├── index.html          # Carry legal hub
-    ├── privacy/
-    │   ├── index.html      # English Privacy Policy (default)
-    │   └── zh.html         # 简体中文隐私政策
-    └── terms/
-        ├── index.html      # English Terms of Service
-        └── zh.html         # 简体中文服务条款
+├── legal/                      # → legal.nevestudio.app  (Pages root = legal/)
+│   ├── index.html              # Neve legal hub — lists each app
+│   └── carry/
+│       ├── index.html          # Carry legal hub
+│       ├── privacy/{index.html, zh.html}   # EN (default) + 简体中文
+│       └── terms/{index.html, zh.html}
+└── site/                       # → nevestudio.app  (placeholder; project not wired yet)
+    └── index.html
 ```
 
-Adding a new app: create `<app>/privacy/` and `<app>/terms/` (same per-locale layout) and add a
-row to the root `index.html` hub. URLs become `legal.nevestudio.app/<app>/<doc>/[zh]`.
-
-## Deploy (Cloudflare Pages)
-
-- Project tracks this repo; production branch `main`; **no build command** (static); root output `/`.
-- Custom domain `legal.nevestudio.app`. Pages serves clean URLs (trailing slash + `index.html`,
-  and `/x.html` 308 → `/x`), so the app links to `…/zh` without the `.html` suffix.
-- Push to `main` → Pages redeploys within ~1 min (then ~5 min edge cache).
-
-## Updating a document
+## Updating a legal document
 
 1. Edit the HTML; update the "Last updated" date in the page heading.
-2. Keep EN + 中文 in sync. **Do not remove PIPL clause 14** in `carry/privacy/zh.html`
+2. Keep EN + 中文 in sync. **Do not remove PIPL clause 14** in `legal/carry/privacy/zh.html`
    (Mainland China requirement; EN page does not need it).
-3. Commit + push.
+3. Commit + push `main` → the legal Pages project redeploys (~1 min, then ~5 min edge cache).
+   (A push redeploys every Pages project on this repo; harmless for static sites. If a future
+   framework site needs it, add path-based build skipping.)
+
+## Adding a new app's legal docs
+
+Create `legal/<app>/privacy/` and `legal/<app>/terms/` (same per-locale layout) and add a row
+to `legal/index.html`. URLs become `legal.nevestudio.app/<app>/<doc>/[zh]`.
 
 ## Contact
 

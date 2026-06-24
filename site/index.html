@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neve</title>
+    <style>
+        :root { --fg: #1a1a1a; --fg-tertiary: #888; --bg: #ffffff; }
+        @media (prefers-color-scheme: dark) {
+            :root { --fg: #f0f0f0; --fg-tertiary: #888; --bg: #1a1a1a; }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", system-ui, sans-serif;
+            color: var(--fg); background: var(--bg);
+            margin: 0; min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { text-align: center; padding: 48px 24px; }
+        h1 { font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; }
+        p { font-size: 14px; color: var(--fg-tertiary); margin: 0; }
+    </style>
+</head>
+<body>
+    <!--
+      Neve studio site (placeholder).
+      Served at nevestudio.app via its own Cloudflare Pages project (Root directory = site/).
+      Not yet wired — create the Pages project when the real site is built.
+    -->
+    <div class="container">
+        <h1>Neve</h1>
+        <p>Made with care.</p>
+    </div>
+</body>
+</html>
