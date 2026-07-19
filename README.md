@@ -52,4 +52,4 @@ to `legal/index.html`. URLs become `legal.nevestudio.app/<app>/<doc>/[zh]`.
 
 ## Contact
 
-murphy.lyu@icloud.com
+support@nevestudio.app
