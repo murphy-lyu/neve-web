@@ -54,7 +54,7 @@
         </div>
 
         <h1>Carry 隐私政策</h1>
-        <p class="meta">最后更新日期：2026 年 6 月 18 日 · 生效日期：2026 年 5 月 15 日</p>
+        <p class="meta">最后更新日期：2026 年 9 月 26 日 · 生效日期：2026 年 5 月 15 日</p>
 
         <h2>1. 关于本政策</h2>
         <p>本隐私政策（"本政策"）说明 Carry（"本应用"或"我们"）在你使用本应用过程中如何对待你的个人信息。本应用由 <strong>TIAN LYU</strong>（以下简称"我们"）开发并发布。</p>
@@ -78,19 +78,19 @@
             <li><strong>物品清单</strong>：你的打包物品名称、勾选状态、所属分类、自定义排序</li>
             <li><strong>场景选择</strong>：你为该次行程选择的场景标签</li>
         </ul>
-        <p><strong>这些数据完全保存在你的设备本机</strong>，由 iOS 系统级数据库（SwiftData）管理，受 iOS 沙盒机制保护。除非你主动开启 iCloud 同步（见第 4 条），任何人——包括我们——都无法访问这些数据。</p>
-        <p>当你卸载本应用时，这些数据会随之被 iOS 系统删除。</p>
+        <p><strong>这些数据保存在你的设备本机</strong>，由 iOS 系统级数据库（SwiftData）管理，受 iOS 沙盒机制保护。当 Carry 可以使用 iCloud 时，同一份数据也可能按第 4 条所述保存在你的 CloudKit 私有数据库中。无论本地副本还是 iCloud 副本，我们都无法访问。</p>
+        <p>当你卸载本应用时，iOS 会删除本地副本；已经同步到 iCloud 的数据可能继续保存在你的私有 iCloud 存储中，以便在你的设备上恢复。</p>
         <p>本应用还会在应用私有沙盒目录中保留一份自动本地备份文件，仅用于应用内的数据恢复功能。该文件不可被我们或任何第三方访问。</p>
 
-        <h2>4. iCloud 同步（如启用）</h2>
-        <p>未来版本中，本应用可能提供 iCloud 同步功能。当你启用此功能：</p>
+        <h2>4. iCloud 同步</h2>
+        <p>当设备已登录 iCloud，且你允许 Carry 使用 iCloud 时：</p>
         <ul>
             <li>你的行程数据会通过 Apple 提供的 <strong>CloudKit 私有数据库</strong>同步到你的其他 Apple 设备</li>
             <li>数据存储在 <strong>你自己的 iCloud 账户内</strong>，使用你自己的存储配额</li>
             <li><strong>我们没有访问、读取或修改这些数据的能力</strong></li>
             <li>此过程受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 约束，与我们无关</li>
         </ul>
-        <p>如未启用 iCloud 同步，本条款不适用。</p>
+        <p>你可以在 iOS 设置中管理 Carry 的 iCloud 访问与所存数据。若 iCloud 不可用或你关闭 Carry 的 iCloud 权限，本应用仍会继续使用设备本地存储。</p>
 
         <h2>5. 本地通知、日历、位置、照片与健康数据访问</h2>
         <p>本应用使用 iOS 本地通知功能，在你出行前提醒你整理打包。所有通知调度和触发<strong>完全在你的设备上完成</strong>，通知内容不会经过任何服务器。</p>
@@ -121,7 +121,7 @@
         <p>唯一涉及的第三方关系是：</p>
         <ul>
             <li><strong>Apple App Store</strong>：作为本应用的分发渠道，受 Apple 自身的隐私政策约束</li>
-            <li><strong>Apple iCloud</strong>（仅当你启用同步时）：见第 4 条</li>
+            <li><strong>Apple iCloud</strong>（当 Carry 可以使用 iCloud 时）：见第 4 条</li>
             <li><strong>Apple MapKit / CLGeocoder</strong>：提供地图显示及目的地城市名解析服务，受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>约束</li>
             <li><strong>Apple WeatherKit</strong>：根据目的地坐标提供天气预报数据，受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>约束</li>
         </ul>

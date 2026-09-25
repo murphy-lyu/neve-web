@@ -18,6 +18,7 @@ A folder can graduate to its own repo if it ever grows a heavy toolchain — che
 - **Carry**
   - Privacy: https://legal.nevestudio.app/carry/privacy/ ([中文](https://legal.nevestudio.app/carry/privacy/zh))
   - Terms: https://legal.nevestudio.app/carry/terms/ ([中文](https://legal.nevestudio.app/carry/terms/zh))
+  - Support: https://legal.nevestudio.app/carry/support/ ([中文](https://legal.nevestudio.app/carry/support/zh))
 
 > URLs have no `legal/` prefix because the legal Pages project's **Root directory is `legal/`** —
 > `legal/carry/privacy/` is served at `legal.nevestudio.app/carry/privacy/`.
@@ -31,7 +32,8 @@ A folder can graduate to its own repo if it ever grows a heavy toolchain — che
 │   └── carry/
 │       ├── index.html          # Carry legal hub
 │       ├── privacy/{index.html, zh.html}   # EN (default) + 简体中文
-│       └── terms/{index.html, zh.html}
+│       ├── terms/{index.html, zh.html}
+│       └── support/{index.html, zh.html}
 └── site/                       # → nevestudio.app  (placeholder; project not wired yet)
     └── index.html
 ```
